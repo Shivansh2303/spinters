@@ -1,30 +1,36 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+    <div>
+      <header>
+        <img src="./assets/status_bar.png" alt="">
+      </header>
+    </div>
   <router-view/>
 </template>
 
+<script>
+export default{
+  name:'App',
+  components:{
+
+  }
+}
+</script>
+
+
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Outfit&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  width: 428px;
+  height:926px;
+  background-color: #0c0517;
+  background-image: url("./assets/background.png");
+  background-repeat: no-repeat;
+  background-size:428px 926px ;
+  transition: 0.35s;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
